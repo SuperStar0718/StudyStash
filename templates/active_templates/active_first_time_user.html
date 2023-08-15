@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Upload Student Info</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Student Info & Membership</h2>
+          <ol>
+            <li><a href="{% url 'active_index' %}">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<!--Login form and logo template-->
+<section class="inner-page">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <!-- Message Section -->
+              <div class="d-flex flex-column align-items-start">
+                  <h2>Upload Student Information</h2>
+                  <p>Get your student ID ready! The next step is to upload your student information.</p>
+                  <p>To continue, please make a purchase of the membership plan that suits your needs.</p>
+                  <div class="text-end">
+                      <a href="{% url 'active_studentinfo_checkout' %}" class="btn btn-primary" role="button">Next</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!--login form and logo template ends here-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  {% include 'templates_includes/active_includes/active_footer.html' %}

@@ -1,0 +1,116 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>StudyStash Create Account</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+
+  {% include 'templates_includes/normal_includes/normal_header.html' %}
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Register Today</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<section class="inner-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Register Form Section -->
+                <form method="post">
+                    {% csrf_token %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter your first name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="email" class="form-label">Email<sup><span style='font-size:10px; color: red'>&#9733;</span></sup></label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="username" class="form-label">Username<sup><span style='font-size:10px; color: red'>&#9733;</span></sup></label>
+                          <input type="text" class="form-control" id="username" name="username" placeholder="Choose a username" required>
+                      </div>
+                  </div>
+                  
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="password" class="form-label">Password<sup><span style='font-size:10px; color: red'>&#9733;</span></sup></label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password<sup><span style='font-size:10px; color: red'>&#9733;</span></sup></label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+                    <!-- Add reCAPTCHA section -->
+                    <div class="container d-flex justify-content-center align-items-center py-3">
+                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                    <div class="text-center mt-3" style="font-size: small;">
+                        By registering, you agree to our <br>
+                        <a href="{% url 'statements' %}#studystash-terms" target="_blank" style="color: blue; text-decoration: underline;">Terms & Conditions</a>.
+                    </div>
+                    <div class="mt-3 text-center" style="font-size: small;">
+                        <p>Already have an account? <a href="{% url 'login' %}" style="color: blue;">Login Here</a></p>
+                    </div>
+                </form>
+
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>                  
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- registration form and logo template ends here -->
+  
+ 
+
+  </main><!-- End #main -->
+  <!-- Base template or where you include scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ======= Footer ======= -->
+  {% include 'templates_includes/normal_includes/normal_footer.html' %}

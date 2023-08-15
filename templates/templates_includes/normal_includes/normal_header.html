@@ -1,0 +1,65 @@
+{% load static %}
+  <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicons/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicons/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicons/favicon-16x16.png' %}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+<link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <div class="logo">
+          <h1 class="text-light"><a href="{% url 'index' %}"><span>StudyStash</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="{% url 'index' %}#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'index' %}#about">About Us</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'index' %}#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'index' %}#portfolio">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'index' %}#events">Pricings</a></li>
+            <li class="dropdown"><a href="#"><span>Discover More</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Join Study-Stash Now</a></li>
+                <li class="dropdown"><a href="#"><span>More Info</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="{% url 'normal_studystash_store' %}">Store</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="{% url 'statements' %}#studystash-partners" target="_blank">Partner with Us</a></li>
+                  </ul>
+                </li>
+                <li><a class="nav-link" href="{% url 'login' %}">My Account</a></li>
+                <li><a href="{% url 'statements' %}#studystash-helpdesk" target="_blank">Help Center</a></li>
+                <li><a href="{% url 'index' %}#services">Services</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="{% url 'login' %}">Sign In</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->

@@ -1,0 +1,585 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Welcome page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 "text-center mt-4">🔥<strong> Level Up Your Journey! </strong>🌟</h2>
+          <h3 class="text-center lead pt-5">💫 Share your student info, purchase memberships, and embark on a journey of boundless opportunities and impact! 🌟</h3>
+          <div>
+            <a href="{% url 'active_studentinfo_checkout' %}" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="{% static 'assets/img/newnow_adobe_express.svg' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="{% static 'assets/img/pexels_adobe_express.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h4 class="text-center shadow-sm" data-aos="fade-up" style="padding: 10px; height: 60px;">Empower Student Innovators: Welcome to StudyStash!</h4>
+            <div class="container custom-scrollbar" style="height: 250px; overflow-y: scroll;">
+              <p data-aos="fade-up" data-aos-delay="100">
+                <p>At Study-Stash, our mission is simple: to empower students to unlock their full potential. As a dedicated platform exclusively designed for students, we provide a dynamic environment where learning, innovation, and collaboration thrive.</p>
+
+                <p>When you join Study-Stash, you'll gain access to a world of opportunities. Create your account and become a valued member, benefiting from thought-provoking survey and research questions that address real-world challenges. By contributing your insights and ideas, you'll play a crucial role in shaping a better tomorrow.</p>
+
+                <p>But that's not all – we believe in recognizing your efforts. As a token of our appreciation, we offer exciting rewards such as cash, laptops, smartphones, and other essential school utensils. We want to inspire you to keep pushing boundaries, fostering a passion for knowledge and creativity.</p>
+
+                <p>Study-Stash is proud to be sponsored by FCW Corporation, a public-registered research-based technology company. Their support allows us to continue providing an exceptional platform for student engagement and innovation. <br><br>
+                <h4>Mission:</h4> <br>
+                The mission of Study-Stash is to empower student innovators by providing a comprehensive learning platform and fostering a collaborative community. We aim to support students in their educational journey, encourage innovation, and help them make a positive impact on their communities.</p> <br>
+                <h4>Vision:</h4> <br>
+                Our vision is to revolutionize education by creating a global network of empowered students who drive positive change through innovation and collaboration. We envision a future where every student has access to quality education, opportunities for personal and professional growth, and the ability to make a lasting impact on society.</p> <br>
+                <h4>Values:</h4> <br>
+               <p>Innovation: We foster a culture of innovation, encouraging students to think creatively, explore new ideas, and push the boundaries of knowledge.</p>
+               <p>Collaboration: We believe in the power of collaboration and provide a platform for students to connect, share insights, and work together to solve real-world problems.</p>
+               <p>Excellence: We strive for excellence in all aspects of our platform, ensuring the highest quality of educational resources, services, and support for our members.</p>
+               <p>Community: We value the strength of our community and promote inclusivity, diversity, and mutual respect among our members. We foster an environment that encourages active participation and supports each student's unique journey.</p> <br>
+               <h4>Objectives:</h4> <br>
+               <p>Expand Reach: Increase the number of students benefiting from Study-Stash by expanding our user base across different educational institutions and regions.</p>
+               <p>Enhance Engagement: Foster active engagement among our student community, encouraging participation in discussions, collaborations, and problem-solving initiatives.</p>
+               <p>Continuous Improvement: Continuously improve our platform's features, user experience, and educational resources to ensure we meet the evolving needs of our members.</p>
+               <p>Strategic Partnerships: Forge strategic partnerships with educational institutions, organizations, and industry leaders to provide valuable opportunities, resources, and support for student innovation and development.</p>
+               <p>Join us today and become part of a vibrant community of student innovators. Together, let's seize the opportunity to learn, grow, and make a lasting impact. Unleash your potential with Study-Stash!</p><br>
+              </p>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4 class="float-start shadow-sm text-center" style="height: 60px;">Endless Rewards for Student Innovators</h4>
+                <div class="container custom-scrollbar2" style="height: 150px; overflow-y: scroll;">
+                <p class="small">Join Studystash, answer questions, and earn rewards like cash, gadgets, and more for your valuable input!</p>
+                </div>
+                </p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-cube-alt"></i>
+                <h4 class="float-start shadow-sm text-center" style="height: 60px;">Empowering Students through Scholarships</h4>
+                <div class="container custom-scrollbar2" style="height: 150px; overflow-y: scroll;">
+                  <p class="small">Join Studystash for rewards and scholarships, supporting your education and empowering your academic and innovative journey.</p>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Experience our remarkable service offerings.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="#services">Collaborative Problem-Solving Studios:</a></h4>
+              <p class="description">Join vibrant studios, collaborate, exchange ideas, tackle challenges. Expand horizons, make an impact through teamwork and innovation.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="#services">Scholarships and Rewards Program:</a></h4>
+              <p class="description">Elevate potential with Study-Stash Scholarships. Gain financial aid, earn rewards like cash and laptops for active engagement.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="#services">Career Support:</a></h4>
+              <p class="description">Access tailored career support at Study-Stash. Explore diverse resources for learning and career advancement, aligning with your goals.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="#services">Expertise and Career Empowerment:</a></h4>
+              <p class="description">Embark on your journey with expert mentorship and innovation at Study-Stash. Our global network enriches knowledge, drives careers, and fosters growth through impactful innovations.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Check out our beautifull portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Innovate</li>
+              <li data-filter=".filter-card">Learn</li>
+              <li data-filter=".filter-web">Connect</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-123.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-123.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Programming"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Unleash your digital potential with Studystash, where we empower students in computer-related disciplines.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-31.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-31.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Electricity"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Ignite your passion for electrical engineering and power up your potential with Studystash. Join us today!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-32.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-32.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I.O.T"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Unlock the potential of IoT and make a lasting impact on your community with Studystash. Join now!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-412.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-412.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lighting future"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Illuminate the world with sustainable solutions through Studystash. Join us in shaping a brighter future!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-5231.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-5231.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Architecture"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Build your career with Studystash - where we empower future civil engineers to construct extraordinary structures. Join us now!</p>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-62.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-62.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Start Ups"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Unleash your entrepreneurial spirit with Studystash, where we empower students to become visionary business leaders. Join us today and start your journey to success!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-71234.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-71234.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Transportation"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Journey through time and space with Studystash, where we explore the intersections of history and urban development. Embark on a captivating learning experience today!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-82.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-82.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="New living"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+              <div class="portfolio-info">
+                <p>Experience the art of interior design with Studystash, where we inspire creativity in creating stunning living spaces. Join us and unlock your design potential!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-91.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-91.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Nature"><i class="bi bi-plus"></i></a>
+                <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              </div>
+          
+              <div class="portfolio-info">
+                <p>Nurture your ideas for positive change with Studystash. We invest in student innovation to transform communities. Join us and make a difference!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">How do I access the Study-Stash program? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                To access Study-Stash, you need to create an account and subscribe to a membership plan. Click on the "Get Started" button to begin the registration process. Make sure to have your school ID and other supporting documents ready, as they may be required during the registration process.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question"> What are the pricing options for membership plans?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We offer two types of membership plans: Normal and Pro. The Normal plan is priced at $20 and provides access to cash rewards and eligibility to apply for scholarships and grants. The Pro plan is priced at $40 and offers access to all types of rewards provided by Study-Stash.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question"> How can I apply for loans? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                To be eligible for loans applications, you must meet the following criteria:
+                <ul>
+                  <li>Be a registered member of Study-Stash.</li>
+                  <li>Subscribe to the Pro plan.</li>
+                </ul>
+                The loans application window is open only during the months when schools are opening. If you miss this period, you will need to wait until the next application window opens.
+              </p>
+            </div>
+          </li>
+          
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What kind of rewards can I expect as a member? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                As a member of Study-Stash, you can earn a diverse range of rewards based on your participation. These rewards include cash incentives, scholarships, grants, school utensils like laptops, tablets, books, exercise-books, clothes, and many others. The rewards are designed to motivate and support your academic journey and personal development.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Does the scholarship funds go directly to the student or the school? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The scholarship funds awarded through Study-Stash are sent directly to the concerned school. The funds are intended to support the student's education and are managed by the school to ensure they are used for their intended purpose.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> Does Study-Stash support students in finding job opportunities? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Yes, at Study-Stash, we are dedicated to supporting students in their career journeys. We are proud to be sponsored by the "FCW Corporation", which works tirelessly to create valuable career opportunities for our members.
+              </p>
+              <p>
+                As a Study-Stash member, you'll have access to exclusive job listings, internship opportunities, and career development resources to help you thrive in the job market. Our mission is to empower students with the skills and connections they need to succeed in their careers.
+              </p>
+              <p>
+                Join Study-Stash today to take advantage of our career support and unlock a world of opportunities!
+              </p>
+            </div>
+          </li>
+        
+          <li>
+            <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">How can I participate in answering research and survey questions?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Study-Stash encourages student collaboration and engagement. You can actively participate by answering research and survey questions that help in solving community problems. These questions will be provided within the platform for you to contribute your insights and ideas.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">What courses are available on Study-Stash? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Explore a diverse array of courses with Study-Stash. While we strive to cover a wide range of disciplines from universities worldwide, your desired course might not be listed yet. Don't be discouraged – our course list is regularly updated. Check back for new additions. For the current list, visit "Courses we Support" in your workspace. We're committed to a comprehensive learning experience tailored to your interests.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq9" class="collapsed question"> What if I don't see my school listed during registration? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                If you don't see your school listed during the registration process, there's no need to worry! Our school list is continuously updated on a daily basis to include new institutions.
+              </p>
+              <p>
+                We strive to expand our reach and include as many schools as possible to provide support to all students. To stay informed about the latest updates and school additions, we encourage you to subscribe to our newsletter.
+              </p>
+              <p>
+                By subscribing to our newsletter, you'll receive regular updates on new school additions and other exciting opportunities. Once your school is listed, you can join and register as a member of Study-Stash to access our wide range of benefits and rewards.
+              </p>
+              <p>
+                Don't miss out on being a part of Study-Stash! Subscribe to our newsletter today and be the first to know when your school is added.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq10" class="collapsed question"> Are project presentations only limited to school projects? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                At Study-Stash, we believe in nurturing talent and supporting students beyond their school projects. While we do offer opportunities for project presentations during our annual event in August, our support extends beyond academic projects.
+              </p>
+              <p>
+                If you are working on any innovative project, whether it's a personal project, startup idea, or community initiative, we encourage you to showcase it to our community. Our platform is open to all members, and we provide a space to present your projects and receive valuable feedback and recognition.
+              </p>
+              <p>
+                Whether it's a tech-related project, social initiative, or artistic endeavor, Study-Stash is here to help you shine. Our community values innovation and creativity, and we are excited to support your journey beyond the classroom.
+              </p>
+              <p>
+                Don't miss the chance to showcase your talents and ideas! Join Study-Stash, be part of our growing community, and let your projects reach new heights.
+              </p>
+            </div>
+          </li>
+          
+          
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Upcoming Events Section ======= -->
+    <section id="events" class="big-events">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Pricing Plans</h2>
+          <p>Choose the plan that suits your needs</p>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow text-center">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Normal</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$20 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><span class="text-success">&#10004;</span>Cash</li>
+                    <li><span class="text-success">&#10004;</span>Scholarships & Grants</li>
+                    <li><span class="text-danger">&#10008;</span>Loans</li>
+                    <li><span class="text-danger">&#10008;</span>Gadgets</li>
+                    <li><span class="text-danger">&#10008;</span>Project Priority</li>
+                    <li><span class="text-success">&#10004;</span>Career Support</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Create an account, login, and purchase a membership">Get started</button>
+
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow text-center">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$40 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><span class="text-success">&#10004;</span>Cash</li>
+                    <li><span class="text-success">&#10004;</span>Scholarships & Grants</li>
+                    <li><span class="text-success">&#10004;</span>Loans</li>
+                    <li><span class="text-success">&#10004;</span>Gadgets</li>
+                    <li><span class="text-success">&#10004;</span>Project Priority</li>
+                    <li><span class="text-success">&#10004;</span>Career Support</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Create an account, login, and purchase a membership">Get started</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Partners in Progress</h2>
+          <p>Partnerships for Success</p>
+        </div>
+
+        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt=""></div>
+          </div> 
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Get in Touch: Connect with Studystash</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, Dar es Salaam, Posta 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@study-stash.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+255 00 5555 444</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9151763301847!2d39.17807427386437!3d-6.657434865080012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c5730cd964c57%3A0xaa4cfab7936522eb!2sKibo%20Commercial%20Complex!5e0!3m2!1sen!2stz!4v1691497558936!5m2!1sen!2stz" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  {% include 'templates_includes/active_includes/active_footer.html' %}

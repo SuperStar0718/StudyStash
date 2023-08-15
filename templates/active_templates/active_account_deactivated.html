@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Account deactivated</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>StudyStash Your Account is Blocked</h2>
+          <ol>
+            <li><a href="{% url 'active_index' %}">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<!--Login form and logo template-->
+    <section class="inner-page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Logo Section -->
+            <div class="text-center">
+              <img src="assets/img/favicons/StudyStash-2_edited.jpg" alt="Logo" style="max-width: 100%; height: 300px; border-radius: 10px;transform: rotate(40deg)">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Account Blocked Message Section -->
+            <div class="text-center">
+              <h2>Account Has not been activated</h2>
+              <p>We sent you a verification link to your email address. please verify your email your account to be activated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          
+    </section>
+  <!--login form and logo template ends here-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include 'templates_includes/active_includes/active_footer.html' %}

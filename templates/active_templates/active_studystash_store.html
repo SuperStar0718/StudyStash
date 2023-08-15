@@ -1,0 +1,428 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Store</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>TechHaven</h2>
+          <ol>
+            <li><a href="{% url 'active_index' %}">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<!--Login form and logo template-->
+    <section class="inner-page" id="section1">
+        <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-md-3 mb-4"  onclick="addToCart(20)">
+                <div class="product">
+                  <div class="product-name">Product 1AA</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_1.jpg" alt="Product 1" class="img-fluid">
+                  </div>
+                  <div class="product-price">$20</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4"  onclick="addToCart(30)">
+                <div class="product">
+                  <div class="product-name">Product 2</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_2.jpg" alt="Product 2" class="img-fluid">
+                  </div>
+                  <div class="product-price">$30</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4"  onclick="addToCart(25)">
+                <div class="product">
+                  <div class="product-name">Product 3</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_3.jpg" alt="Product 3" class="img-fluid">
+                  </div>
+                  <div class="product-price">$25</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Second Row -->
+            <div class="row justify-content-between">
+              <div class="col-md-3 mb-4" onclick="addToCart(35)">
+                <div class="product">
+                  <div class="product-name">Product 4BB</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_4.jpg" alt="Product 4" class="img-fluid">
+                  </div>
+                  <div class="product-price">$35</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4"  onclick="addToCart(40)">
+                <div class="product">
+                  <div class="product-name">Product 5</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_5.jpg" alt="Product 5" class="img-fluid">
+                  </div>
+                  <div class="product-price">$40</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4"  onclick="addToCart(28)">
+                <div class="product">
+                  <div class="product-name">Product 6</div>
+                  <div class="product-image">
+                    <img src="path_to_product_image_6.jpg" alt="Product 6" class="img-fluid">
+                  </div>
+                  <div class="product-price">$28</div>
+                  <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around pt-5">
+            <div class="d-flex justify-content-around pt-5">
+                <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showPrevious()">Previous</button>
+                <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showNext()">Next</button>
+              </div>   
+          </div>  
+    </section>
+
+    <section class="inner-page" id="section2" style="display: none;">
+      <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3 mb-4" onclick="addToCart(20)">
+              <div class="product">
+                <div class="product-name">Product 7CC</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_1.jpg" alt="Product 1" class="img-fluid">
+                </div>
+                <div class="product-price">$20</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+        
+            <div class="col-md-3 mb-4" onclick="addToCart(30)">
+              <div class="product">
+                <div class="product-name">Product 8</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_2.jpg" alt="Product 2" class="img-fluid">
+                </div>
+                <div class="product-price">$30</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+        
+            <div class="col-md-3 mb-4"  onclick="addToCart(25)">
+              <div class="product">
+                <div class="product-name">Product 9</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_3.jpg" alt="Product 3" class="img-fluid">
+                </div>
+                <div class="product-price">$25</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Second Row -->
+          <div class="row justify-content-between">
+            <div class="col-md-3 mb-4" onclick="addToCart(35)">
+              <div class="product">
+                <div class="product-name">Product 10DD</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_4.jpg" alt="Product 4" class="img-fluid">
+                </div>
+                <div class="product-price">$35</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+        
+            <div class="col-md-3 mb-4" onclick="addToCart(40)">
+              <div class="product">
+                <div class="product-name">Product 11</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_5.jpg" alt="Product 5" class="img-fluid">
+                </div>
+                <div class="product-price">$40</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+        
+            <div class="col-md-3 mb-4" onclick="addToCart(28)">
+              <div class="product">
+                <div class="product-name">Product 12</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_6.jpg" alt="Product 6" class="img-fluid">
+                </div>
+                <div class="product-price">$28</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-around pt-5">
+          <div class="d-flex justify-content-around pt-5">
+              <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showPrevious()">Previous</button>
+              <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showNext()">Next</button>
+            </div>   
+        </div>   
+  </section>
+  <section class="inner-page" id="section3" style="display: none;">
+    <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-3 mb-4" onclick="addToCart(20)">
+            <div class="product">
+              <div class="product-name">Product 13EE</div>
+              <div class="product-image">
+                <img src="path_to_product_image_1.jpg" alt="Product 1" class="img-fluid">
+              </div>
+              <div class="product-price">$20</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4" onclick="addToCart(30)">
+            <div class="product">
+              <div class="product-name">Product 14</div>
+              <div class="product-image">
+                <img src="path_to_product_image_2.jpg" alt="Product 2" class="img-fluid">
+              </div>
+              <div class="product-price">$30</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4" onclick="addToCart(25)">
+            <div class="product">
+              <div class="product-name">Product 15</div>
+              <div class="product-image">
+                <img src="path_to_product_image_3.jpg" alt="Product 3" class="img-fluid">
+              </div>
+              <div class="product-price">$25</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Second Row -->
+        <div class="row justify-content-between">
+          <div class="col-md-3 mb-4"  onclick="addToCart(35)">
+            <div class="product">
+              <div class="product-name">Product 16FF</div>
+              <div class="product-image">
+                <img src="path_to_product_image_4.jpg" alt="Product 4" class="img-fluid">
+              </div>
+              <div class="product-price">$35</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4" onclick="addToCart(40)">
+            <div class="product">
+              <div class="product-name">Product 17</div>
+              <div class="product-image">
+                <img src="path_to_product_image_5.jpg" alt="Product 5" class="img-fluid">
+              </div>
+              <div class="product-price">$40</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4" onclick="addToCart(28)">
+            <div class="product">
+              <div class="product-name">Product 18</div>
+              <div class="product-image">
+                <img src="path_to_product_image_6.jpg" alt="Product 6" class="img-fluid">
+              </div>
+              <div class="product-price">$28</div>
+              <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around pt-5">
+        <div class="d-flex justify-content-around pt-5">
+            <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showPrevious()">Previous</button>
+            <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showNext()">Next</button>
+          </div>   
+      </div>  
+</section>
+<section class="inner-page" id="section4" style="display: none;">
+  <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-3 mb-4" onclick="addToCart(20)">
+          <div class="product">
+            <div class="product-name">Product 13EE</div>
+            <div class="product-image">
+              <img src="path_to_product_image_1.jpg" alt="Product 1" class="img-fluid">
+            </div>
+            <div class="product-price">$20</div>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+    
+        <div class="col-md-3 mb-4" onclick="addToCart(30)">
+          <div class="product">
+            <div class="product-name">Product 14</div>
+            <div class="product-image">
+              <img src="path_to_product_image_2.jpg" alt="Product 2" class="img-fluid">
+            </div>
+            <div class="product-price">$30</div>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+    
+        <div class="col-md-3 mb-4" onclick="addToCart(25)">
+          <div class="product">
+            <div class="product-name">Product 15</div>
+            <div class="product-image">
+              <img src="path_to_product_image_3.jpg" alt="Product 3" class="img-fluid">
+            </div>
+            <div class="product-price">$25</div>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Second Row -->
+      <div class="row justify-content-between">
+          <div class="col-md-3 mb-4" onclick="addToCart(35)">
+              <div class="product">
+                <div class="product-name">Product 16FF</div>
+                <div class="product-image">
+                  <img src="path_to_product_image_4.jpg" alt="Product 4" class="img-fluid">
+                </div>
+                <div class="product-price">$35</div>
+                <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+              </div>
+            </div>
+            
+            
+    
+        <div class="col-md-3 mb-4" onclick="addToCart(40)">
+          <div class="product">
+            <div class="product-name">Product 17</div>
+            <div class="product-image">
+              <img src="path_to_product_image_5.jpg" alt="Product 5" class="img-fluid">
+            </div>
+            <div class="product-price">$40</div>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+    
+        <div class="col-md-3 mb-4" onclick="addToCart(28)">
+          <div class="product">
+            <div class="product-name">Product jjngdf</div>
+            <div class="product-image">
+              <img src="path_to_product_image_6.jpg" alt="Product 6" class="img-fluid">
+            </div>
+            <div class="product-price">$28</div>
+            <button type="button" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around pt-5">
+      <div class="d-flex justify-content-around pt-5">
+          <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showPrevious()">Previous</button>
+          <button type="button" class="btn btn-primary btn-sm flex-fill mx-4" onclick="showNext()">Next</button>
+        </div>   
+    </div>
+       
+</section>
+
+  
+     <!--this is the code for the cart section that sums up the total products to be bought-->
+     <!--this is the code for the cart section that sums up the total products to be bought-->
+    <!-- Cart section -->
+  <div class="container pb-5">
+    <div class="row justify-content-between align-items-center small-cart">
+      <div class="col-md-4">
+        <p>Total Items:</p>
+        <div class="input-group">
+          <input type="number" class="form-control" value="0" readonly id="totalItems">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p>Total Price to be Paid:</p>
+        <input type="text" class="form-control" value="$0" readonly id="totalPrice">
+      </div>
+      <div class="col-md-4">
+        <p>Products in my cart ➔</p>
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">Continue</button>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+                    <div class="modal-body">
+                      <table class="table table-bordered" id="selectedProductsTable">
+                        <thead>
+                          <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Inc/Dec</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Selected products will be added here dynamically -->
+                        </tbody>
+                      </table>
+                      
+                      <div>Total Amount to be Paid: <strong id="totalAmount">$0</strong></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" onclick="showNext()">Add another item</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="proceedToCheckout()">Proceed to Checkout ➔</button>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+      </div>
+    </div>
+  </div>
+  
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include 'templates_includes/active_includes/active_footer.html' %}

@@ -1,0 +1,121 @@
+{% load static %}
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Stay in the Loop: Subscribe to Our Newsletter</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Study-Stash</h3>
+            <p>
+              A108 Adam Street <br>
+              Dar es Salaam, Posta 535022<br>
+              United Republic of Tanzania <br><br>
+              <strong>Phone:</strong> +255 00 5555 444<br>
+              <strong>Email:</strong> info@study-stash.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'statements' %}#studystash-helpdesk" target="_blank">Help & Support</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'login' %}#loginnow">My Account</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'statements' %}#studystash-privacy" target="_blank">Privacy policy</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="{% url 'statements' %}#studystash-terms" target="_blank">Terms of use</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="{% url 'statements' %}#studystash-donotsell" target="_blank">Do Not Sell My Personal Information</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}#services">Collaborative Problem-Solving Studios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}#services">Scholarships and Rewards Program</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}#services">Career Support</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}#services">Expertise and Career Empowerment</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Connect with Study-Stash: <br>Join Us on Social Media</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a href="#" class="telegram"><i class="bx bxl-telegram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <!-- HTML Element that will display the current year -->
+      <div class="copyright">
+        Copyright &copy; <span id="current-year"></span> <strong><span>Study-Stash</span></strong>. All Rights Reserved 
+      </div>
+      <div class="credits">
+     
+        Sponsored by <a href="">FCW Corporation</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+  <!-- JavaScript code to dynamically update the current year -->
+  <script>
+    // Wait for the DOM (HTML document) to be fully loaded and parsed
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the HTML element with the ID "current-year" from the document
+  const currentYearElem = document.querySelector("#current-year");
+
+  // Create a new Date object representing the current date and time
+  const currentYear = new Date().getFullYear();
+
+  // Update the content of the selected element with the current year
+  currentYearElem.textContent = currentYear;
+});
+  </script>
+
+  <script>
+    function openProblemSolvingModal() {
+      $('#problemSolvingModal').modal('show');
+    }
+    </script>
+
+</body>
+
+</html>

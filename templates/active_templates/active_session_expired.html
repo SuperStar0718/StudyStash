@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Renew to Continue</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Renew Session!</h2>
+          <ol>
+            <li><a href="{% url 'active_index' %}">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<!--Login form and logo template-->
+<section class="inner-page">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <!-- Message Section -->
+              <div class="text-center">
+                  <h2 class="mb-3">Membership Plan Expired</h2>
+                  <p>Your membership plan has expired. To renew your plan, please click the button below.</p>
+                  <div class="d-grid gap-2">
+                      <a href="{% url 'active_session_membership' %}" class="btn btn-primary">Renew Membership Plan</a>
+                  </div>
+                  <p style="font-size: small;">We care about your privacy. Your personal information will be handled securely and will not be shared with third parties.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!--login form and logo template ends here-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  {% include 'templates_includes/active_includes/active_footer.html' %}

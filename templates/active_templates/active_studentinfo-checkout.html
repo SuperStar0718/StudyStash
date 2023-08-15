@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study-Stash Become a member</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% include 'templates_includes/active_includes/active_header.html' %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Student Info & Membership</h2>
+          <ol>
+            <li><a href="{% url 'active_index' %}">Home</a></li>
+            <li>Creating Tomorrow, Today</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+<!--Login form and logo template-->
+<section class="inner-page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Registration Form -->
+          <form method="post" action="{% url 'active_session_membership' %}">
+            <!-- Title: Unlock this Student-Only Offer -->
+            <h2 style="font-size: 28px; color: #007BFF; font-weight: bold; text-align: center;">Student Registration and Membership Purchase</h2>
+
+
+            <p>Verify you're a student at a degree-granting educational establishment.</p>
+            <!-- First Name and Last Name -->
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control " id="firstName" placeholder="Enter your first name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control " id="lastName" placeholder="Enter your last name" required>
+              </div>
+            </div>
+            <!-- Educational Institution and Course -->
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="institution" class="form-label">Educational Institution Name</label>
+                <input type="text" class="form-control" id="institution" placeholder="Enter your institution name" required list="universities">
+                <datalist id="universities">
+                    <option value="University of ABC">
+                    <option value="XYZ College">
+                    <option value="Example University">
+                    <!-- Add more university options here -->
+                </datalist>
+              </div>
+            
+              <div class="col-md-6 mb-3">
+                <label for="course" class="form-label">Course</label>
+                <input list="courseList" class="form-control" id="course" placeholder="Select or type your course" required>
+                <datalist id="courseList">
+                    <option value="Computer Science">
+                    <option value="Engineering">
+                    <option value="Medicine">
+                    <option value="Business Administration">
+                    <option value="Law">
+                    <option value="Environmental Science">
+                    <option value="Mass Communication">
+                    <option value="Economics">
+                    <option value="Architecture">
+                    <option value="International Relations">
+                    <!-- Add more course options -->
+                </datalist>
+            </div>
+            </div>
+            
+            <!-- Upload Student ID -->
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="education-level" class="form-label">Education Level</label>
+    <select class="form-select" id="education-level" name="education_level" required>
+      <option selected disabled>Select your education level</option>
+      <option value="degree">Degree</option>
+      <option value="diploma">Diploma</option>
+      <option value="certificate">Certificate</option>
+      <option value="high_school">High School</option>
+      <!-- Add more education level options here if needed -->
+    </select>
+  </div>
+ 
+
+  <!-- GPA -->
+  <div class="col-md-6 mb-3">
+    <label for="gpa" class="form-label">GPA</label>
+    <select class="form-select" id="gpa" required>
+      <option selected disabled>Select your last GPA range</option>
+      <option value="5.0">5</option>
+      <option value="4.0">4.0</option>
+      <option value="3.5">3.5</option>
+      <option value="2.0">2.0</option>
+      <!-- Add more GPA options here -->
+    </select>
+  </div>
+</div>
+
+                        
+            <!-- Date of Birth and Country -->
+            <div class="mb-3 row">
+              <div class="col-md-6">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control " id="dob" placeholder="Select your date of birth" required>
+              </div>              
+              <div class="col-md-6">
+                <label for="country" class="form-label">Country Nationality</label>
+                <select class="form-select" id="country" required>
+                  <option selected disabled>Select your country</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <!-- Add more country options here -->
+                </select>
+              </div>
+            </div>
+            <!-- Gender and National ID Upload -->
+<div class="row">
+  <div class="col-md-6 mb-3">
+      <label for="gender" class="form-label">Gender</label>
+      <select class="form-select " id="gender" required>
+          <option selected disabled>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <!-- Add more gender options here if needed -->
+      </select>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="studentID" class="form-label">Upload Student ID</label>
+    <input type="file" class="form-control" id="studentID" required>
+    <small class="form-text" style="color: blue; font-size: 12px;">Please upload a valid student ID that has not expired.</small>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="academic-results" class="form-label">Academic Statement of Results (PDF)</label>
+      <input type="file" class="form-control " id="academic-results" name="academic_results" accept=".pdf" required>
+      <small class="form-text text-muted">Upload the latest and it should be in PDF format</small>
+      <small class="form-text text-danger" id="pdfError" style="display: none;">Please upload a PDF document.</small>
+  </div>
+    <div class="col-md-6 mb-3">
+      <label for="student-goal" class="form-label">Student Goal </label>
+      <input type="text" class="form-control" id="student-goal" name="student_goal" placeholder="Enter your student goal" required>
+      <small class="form-text " style="color: blue; font-size: 12px;">(Who do you want to be in the future)</small>
+  </div>
+  
+</div>
+
+<div>
+  <div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="address" class="form-label">Address</label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+</div>
+
+<div class="col-md-6 mb-3">
+    <label for="postal-code" class="form-label">Postal Code</label>
+    <input type="text" class="form-control " id="postal-code" name="postal_code" placeholder="Enter your postal code" required>
+</div>
+</div>
+
+<div class="mb-3">
+  <label for="about-me" class="form-label">Tell us about yourself</label>
+  <textarea class="form-control " id="about-me" name="about_me" rows="5" placeholder="Write about yourself here..." required></textarea>
+  <small class="form-text text-muted">Please provide some information about yourself, your interests, and your aspirations.</small>
+</div>
+
+            <div class="text-center mt-3 mp-3" style="font-size: small; color:red;">
+              Submit the Form and Continue → Check
+          </div>
+              
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" style="background-color: #28a745;">Submit</button>
+        </div>
+        
+              <div class="mt-3"  style="font-size: small;">
+                <p>We care about your privacy. Your personal information will be handled securely and will not be shared with third parties.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--login form and logo template ends here-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <script>
+    const academicResultsInput = document.getElementById("academic-results");
+    const pdfError = document.getElementById("pdfError");
+    
+    academicResultsInput.addEventListener("change", function() {
+        const file = academicResultsInput.files[0];
+        if (file && file.name.toLowerCase().endsWith(".pdf")) {
+            pdfError.style.display = "none";
+        } else {
+            pdfError.style.display = "block";
+            academicResultsInput.value = ""; // Clear the selected file
+        }
+    });
+    </script>
+  {% include 'templates_includes/active_includes/active_footer.html' %}
