@@ -36,7 +36,11 @@
           <div class="row justify-content-center">
               <div class="col-md-6">
                   <!-- login_form.html -->
-  
+                  {% if registration %}
+                  <div class="notification btn btn-success">
+                    Account created successfully. You can now login.
+                  </div>
+                  {% endif %}
                   <form method="post" action="{% url 'login' %}">
                       {% csrf_token %}
                       {% if messages %}
